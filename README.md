@@ -16,7 +16,7 @@ This application uses the OpenAI Python client library to interact with OpenAI's
 ### Step 1: Clone or Navigate to Project Directory
 
 ```bash
-cd c:\vscodeworkspace\AIWorkspace\simpleAIcall
+https://github.com/sjpraveen/mytestopenaiapi.git
 ```
 
 ### Step 2: Install Dependencies
@@ -67,7 +67,7 @@ export OPENAIKEY="your-api-key-here"
 1. Open your terminal/command prompt
 2. Navigate to the project directory:
    ```bash
-   cd c:\vscodeworkspace\AIWorkspace\mytestaiapi
+   https://github.com/sjpraveen/mytestopenaiapi.git
    ```
 3. Ensure dependencies are installed:
    ```bash
