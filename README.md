@@ -55,9 +55,9 @@ export OPENAIKEY="your-api-key-here"
    $env:OPENAIKEY = "your-api-key-here"
    ```
 
-2. **Run the application**:
+2. **Run the application with your prompt**:
    ```bash
-   python main.py
+   python main.py "your prompt here"
    ```
 
 3. **View the response** in the console
@@ -67,7 +67,7 @@ export OPENAIKEY="your-api-key-here"
 1. Open your terminal/command prompt
 2. Navigate to the project directory:
    ```bash
-   cd c:\vscodeworkspace\AIWorkspace\simpleAIcall
+   cd c:\vscodeworkspace\AIWorkspace\mytestaiapi
    ```
 3. Ensure dependencies are installed:
    ```bash
@@ -77,23 +77,31 @@ export OPENAIKEY="your-api-key-here"
    ```powershell
    $env:OPENAIKEY = "sk-xxxxxxxxxxxx"
    ```
-5. Run the script:
+5. Run the script with your prompt:
    ```bash
-   python main.py
+   python main.py "What is the capital of France?"
    ```
 6. The application will query the model and display the result
 
 ## Usage
 
-Run the application from the command line:
+Run the application from the command line with your prompt:
 
 ```bash
-python main.py
+python main.py "your prompt here"
+```
+
+### Examples
+
+```bash
+python main.py "What is the capital of France?"
+python main.py "Tell me a joke about programming"
+python main.py "Explain quantum computing in simple terms"
 ```
 
 The application will:
 1. Initialize the OpenAI client using your API key
-2. Send a sample prompt to the model
+2. Send your prompt to the model
 3. Display the response on the console
 
 ### Example Output

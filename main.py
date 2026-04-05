@@ -1,4 +1,5 @@
 import os
+import sys
 from openai import OpenAI
 
 # Initialize the OpenAI client using OPENAIKEY environment variable
@@ -8,8 +9,12 @@ if not api_key:
 
 client = OpenAI(api_key=api_key)
 
-# Create a simple prompt for the model
-prompt = "What is the capital of France?"
+# Get prompt from command line argument
+if len(sys.argv) > 1:
+    prompt = " ".join(sys.argv[1:])
+else:
+    print("Usage: python main.py <your prompt here>")
+    sys.exit(1)
 
 print("=" * 50)
 print("OpenAI API Call Example")
